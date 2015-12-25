@@ -77,4 +77,4 @@
 [![https://gyazo.com/74c93448444c540000f1474a1dfde4a1](https://i.gyazo.com/74c93448444c540000f1474a1dfde4a1.png)](https://gyazo.com/74c93448444c540000f1474a1dfde4a1)
 
 
-[次:インスタンス起動の準備(続き)](https://github.com/)
+[次:キーペアの作成へ)](https://github.com/yoshirako/aws-handson-scenario/blob/master/WebServer/Scenario/04-prepare-key-for-launch-instance.md)

@@ -53,4 +53,4 @@ AWSは従量課金型パブリッククラウドサービスです。
 ## 本シナリオのゴール
 本シナリオは、AWS上に実際に、プライベートネットワークを構築し、その上で、仮想インスタンスを起動します。仮想インスタンスへ外部からアクセスが可能なように設定を行いながら、実際に仮想インスタンスをWebサーバとして稼働させてます。
 
-[シナリオを始める](https://github.com/)
+[シナリオを始める](https://github.com/yoshirako/aws-handson-scenario/blob/master/WebServer/Scenario/01-Login-to-ManagementConsole.md)

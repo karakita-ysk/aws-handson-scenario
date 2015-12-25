@@ -177,4 +177,4 @@ EC2インスタンスのステータスチェックに緑色のチェックマ�
 赤色の×マークになっている場合は、クラウド管理者に問い合わせてください。
 ````
 
-[次：インスタンスVMでの作業（例） ](https://github.com/)
+[次：インスタンスVMでの作業（例） ](https://github.com/yoshirako/aws-handson-scenario/blob/master/WebServer/Scenario/06-Configuring-WebServer-with-vm.md)

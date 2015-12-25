@@ -40,4 +40,4 @@ EC2ダッシュボード画面にて、左側のリストから「キーペア�
 [![https://gyazo.com/d0a6db8092080e7f57b70a49d54f3150](https://i.gyazo.com/d0a6db8092080e7f57b70a49d54f3150.png)](https://gyazo.com/d0a6db8092080e7f57b70a49d54f3150)
 
 
-[次：インスタンスの起動](https://github.com)
+[次：インスタンスの起動へ](https://github.com/yoshirako/aws-handson-scenario/blob/master/WebServer/Scenario/05-launch-instance.md)

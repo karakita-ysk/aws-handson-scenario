@@ -8,7 +8,8 @@
 
 [![https://gyazo.com/06a9f329d0fbd99aa00a8b99bd632a06](https://i.gyazo.com/06a9f329d0fbd99aa00a8b99bd632a06.gif)](https://gyazo.com/06a9f329d0fbd99aa00a8b99bd632a06)
 
-### プライベートクラウドネットワークの作成
+### VIrtual Private Cloud(VPC)の作成
+以降の手順によって、仮想的なプライベートクラウド環境を作成します。
 
 画面左下のVPCアイコンをクリックし、VPCダッシュボード画面に移動します。
 
@@ -21,11 +22,11 @@ VPCダッシュボード画面では、VPCに関連するサービスの設定�
 [![https://gyazo.com/3a74285d879569dd35ea7d88be0fcc29](https://i.gyazo.com/3a74285d879569dd35ea7d88be0fcc29.png)](https://gyazo.com/3a74285d879569dd35ea7d88be0fcc29)
 
 
-### Virtual Private Cloud (VPC)の作成
+### VPCネットワークの作成
+VPCで使用するプライベートネットワークアドレスの範囲を設定します。  
+*(注意)* VPCネットワークアドレスは一度設定すると後から変更できないので、後々のシステム拡張等も踏まえて余裕を持った範囲を設定してください。
 
-仮想プライベートクラウドを作成します。VPCにより、パブリッククラウド内に仮想的にプライベートクラウド環境が構築できます。
-
-まず、左側のリストにある「VPC」をクリックします。ボタンをクリックすると、VPC一覧画面が表示されます。
+まず、左側のリストにある「VPC」をクリックし、VPC一覧画面を表示します。
 [![https://gyazo.com/b5f1d621292b5de3cbc0a60d44963a4d](https://i.gyazo.com/b5f1d621292b5de3cbc0a60d44963a4d.png)](https://gyazo.com/b5f1d621292b5de3cbc0a60d44963a4d)
 
 すでにVPCが存在しますが、こちらはAWSがデフォルトのVPCとして作成したものになります。
@@ -50,10 +51,8 @@ VPCダッシュボード画面では、VPCに関連するサービスの設定�
 
 [![https://gyazo.com/b2a275a1cc4b6e787ddfa544fd95956a](https://i.gyazo.com/b2a275a1cc4b6e787ddfa544fd95956a.png)](https://gyazo.com/b2a275a1cc4b6e787ddfa544fd95956a)
 
-
 ### サブネットの作成
-
-左側のリストにある「サブネット」をクリックします。ボタンをクリックすると、サブネット一覧画面が表示されます。
+左側のリストにある「サブネット」をクリックし、サブネット一覧画面を表示します。
 
 すでにサブネットが存在しますが、こちらはVPCと同じくAWSがデフォルトとして作成したものになります。
 
@@ -79,11 +78,32 @@ VPCダッシュボード画面では、VPCに関連するサービスの設定�
 
 [![https://gyazo.com/910096d640b17fe4c6b2a5ee01106e57](https://i.gyazo.com/910096d640b17fe4c6b2a5ee01106e57.png)](https://gyazo.com/910096d640b17fe4c6b2a5ee01106e57)
 
+### サブネットとRoute Tableの関連付け
+作成したサブネットは、VPC内の一つのRoute Tableに関連付ける必要があります。  
+本シナリオでは、VPC作成時に自動的に作成されたRoute Tableに関連付けます。  
+
+左側のリストにある「ルートテーブル」ボタンをクリックし、ルートテーブル一覧画面を表示します。  
+その後、VPCの列に先ほど作成したVPC名が表示されているルートテーブルを選択します。
+
+[![https://gyazo.com/789f0eeed75038b19ba65d303ef64b9f](https://i.gyazo.com/789f0eeed75038b19ba65d303ef64b9f.png)](https://gyazo.com/789f0eeed75038b19ba65d303ef64b9f)
+
+下部にある、「サブネットの関連付け」タブをクリックし、表示した画面の「編集」ボタンをクリックします。
+
+[![https://gyazo.com/099c9838387ca11e21a5d9db8043b8dd](https://i.gyazo.com/099c9838387ca11e21a5d9db8043b8dd.png)](https://gyazo.com/099c9838387ca11e21a5d9db8043b8dd)
+
+サブネットの一覧が表示されるので、先ほど作成したサブネットにチェックを入れ、「保存」ボタンをクリックします。
+
+[![https://gyazo.com/e97218ffa81d3d4f40c78936c6ab145c](https://i.gyazo.com/e97218ffa81d3d4f40c78936c6ab145c.png)](https://gyazo.com/e97218ffa81d3d4f40c78936c6ab145c)
+
+先ほど作成したサブネットが関連付けられていることを確認したら、完了になります。
+
+[![https://gyazo.com/703de85b9ee385d89110394c9f27f286](https://i.gyazo.com/703de85b9ee385d89110394c9f27f286.png)](https://gyazo.com/703de85b9ee385d89110394c9f27f286)
+
 ### インターネットゲートウェイの作成
 
 VPC内部からインターネットに接続させるために、インターネットゲートウェイ(以降、IGW)を作成します。
 
-左側のリストにある「インターネットゲートウェイ」をクリックします。ボタンをクリックすると、IGW一覧画面が表示されます。  
+左側のリストにある「インターネットゲートウェイ」をクリックし、IGW一覧画面を表示します。  
 すでにIGW存在しますが、こちらはVPCやサブネットと同じくAWSがデフォルトとして作成したものになります。
 
 [![https://gyazo.com/3b30f7d924bcbcefc1d52bd1611a1785](https://i.gyazo.com/3b30f7d924bcbcefc1d52bd1611a1785.png)](https://gyazo.com/3b30f7d924bcbcefc1d52bd1611a1785)
@@ -119,7 +139,36 @@ VPCを選択後、右下の「アタッチ」ボタンをクリックし、イ�
 
 [![https://gyazo.com/da6b857b1d301cb88681bb2b090fa734](https://i.gyazo.com/da6b857b1d301cb88681bb2b090fa734.png)](https://gyazo.com/da6b857b1d301cb88681bb2b090fa734)
 
+#### IGWをルーティング先に指定
+IGWをルーティングテーブルに設定します。  
+この設定により、VPC内で稼働するEC2インスタンスがインターネット上に存在するサーバと通信できるようになります。  
+
+左側のリストにある「ルートテーブル」ボタンをクリックし、ルートテーブル一覧画面を表示します。  
+その後、VPCの列に先ほど作成したVPC名が表示されているルートテーブルを選択します。  
+
+[![https://gyazo.com/789f0eeed75038b19ba65d303ef64b9f](https://i.gyazo.com/789f0eeed75038b19ba65d303ef64b9f.png)](https://gyazo.com/789f0eeed75038b19ba65d303ef64b9f)
+
+下部の「ルート」タブをクリックし、表示した画面にある「編集」ボタンをクリックします。
+
+[![https://gyazo.com/c4ace9c911df8e982f4675d6adc634b2](https://i.gyazo.com/c4ace9c911df8e982f4675d6adc634b2.png)](https://gyazo.com/c4ace9c911df8e982f4675d6adc634b2)
+
+ルーティング設定画面が表示されるので、「別ルートの追加」ボタンをクリックし、新たな入力フィールドを追加します。  
+その後、下記情報を入力します。  
+（なお、入力値は任意のものであっても問題ありません。）
+
+| 項目 | 設定値 |
+|:------------|:------------|
+| 送信先 | 0.0.0.0/0 |
+| ターゲット | 先ほど作成したIGW |
+
+[![https://gyazo.com/61d331eee3bdc45ec86a4b4452661a08](https://i.gyazo.com/61d331eee3bdc45ec86a4b4452661a08.png)](https://gyazo.com/61d331eee3bdc45ec86a4b4452661a08)
+
+入力完了後、「保存」ボタンをクリックします。  
+ルートテーブルにIGWが追加されていることを確認したら、設定完了となります。
+
+[![https://gyazo.com/55667d4622c1ee1a08eeed5f7f8fff59](https://i.gyazo.com/55667d4622c1ee1a08eeed5f7f8fff59.png)](https://gyazo.com/55667d4622c1ee1a08eeed5f7f8fff59)
 
 
-[次：ルータの作成へ](https://github.com/)
+
+[次：セキュリティグループの作成へ](https://github.com/yoshirako/aws-handson-scenario/blob/master/WebServer/Scenario/03-prepare-sg-for-launch-instance.md)
 

@@ -29,4 +29,4 @@ https://hogehogehoge.signin.aws.amazon.com/console
 
 [![https://gyazo.com/e20315639ecc925a1bc89998cc192b03](https://i.gyazo.com/e20315639ecc925a1bc89998cc192b03.png)](https://gyazo.com/e20315639ecc925a1bc89998cc192b03)
 
-[次：ネットワークの作成](https://github.com/taraki1978/OpenStackBasicScenario/blob/master/kilo/rhelosp/jp/scenario/02-create-network.md)
+[次：ネットワークの作成](https://github.com/yoshirako/aws-handson-scenario/blob/master/WebServer/Scenario/02-create-network.md)
