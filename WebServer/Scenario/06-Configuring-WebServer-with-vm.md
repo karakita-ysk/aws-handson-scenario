@@ -73,5 +73,5 @@ $ sudo service httpd start
 
 AWS環境上に、Webサーバを構築するシナリオは、以上となります。
 
-
+[次：環境のクリーンアップへ](https://github.com/yoshirako/aws-handson-scenario/blob/master/WebServer/Scenario/07-cleanup.md)
 
