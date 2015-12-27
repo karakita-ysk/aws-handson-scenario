@@ -15,7 +15,7 @@ https://hogehogehoge.signin.aws.amazon.com/console
 [![https://gyazo.com/4ca48c03bce644776bbc6177944d6871](https://i.gyazo.com/4ca48c03bce644776bbc6177944d6871.png)](https://gyazo.com/4ca48c03bce644776bbc6177944d6871)
 
 ### ログイン
-ユーザ名 ／パスワードを入力し、ログインボタンをクリックします。
+ユーザ名 ／パスワードを入力し、「サインイン」ボタンをクリックします。
 ユーザ名およびそのパスワードは、事前に用意されている必要があります。用意するアカウントは、一般的なIAMアカウントとなります。
 
 ```
