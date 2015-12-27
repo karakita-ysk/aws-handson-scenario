@@ -9,7 +9,7 @@
 ### VIrtual Private Cloud(VPC)の作成
 以降の手順によって、仮想的なプライベートクラウド環境を作成します。
 
-画面左下のVPCアイコンをクリックし、VPCダッシュボード画面に移動します。
+AWSマネジメントコンソールのトップ画面左下のVPCアイコンをクリックし、VPCダッシュボード画面に移動します。
 
 [![https://gyazo.com/29ec4d1d3c4136a6d3c9acb019ac9078](https://i.gyazo.com/29ec4d1d3c4136a6d3c9acb019ac9078.png)](https://gyazo.com/29ec4d1d3c4136a6d3c9acb019ac9078)
 
