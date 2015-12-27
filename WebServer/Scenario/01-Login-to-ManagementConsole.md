@@ -5,10 +5,10 @@
 [Link-Top]:https://github.com/yoshirako/aws-handson-scenario/blob/master/WebServer/Introduction.md
 
 ### Webブラウザからログインページへアクセス
-PC上で、Webブラウザを起動し、接続先を入力して、アクセスします。
+PC上でWebブラウザを起動し、接続先を入力してアクセスします。
 
-本シナリオでは、アカウント名を「hogehogehoge」として作成しているため、接続先URLは下記になります。  
-※hogehogehogeの部分をご自身の環境に合わせて適宜読み替えてください。
+本シナリオでは、接続先URLは下記になります。  
+※hogehogehoge((アカウント名)の部分をご自身の環境に合わせて適宜読み替えてください。
 ```
 https://hogehogehoge.signin.aws.amazon.com/console
 ```
