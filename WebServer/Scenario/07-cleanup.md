@@ -92,7 +92,7 @@ EC2インスタンスを選択後、上部「アクション」タブをクリ�
 左側リストの「キーペア」をクリックし、キーペア一覧画面を表示します。
 先ほど作成したキーペアを選択し、上部の「削除」ボタンをクリックしてください。
 
-[![https://gyazo.com/b51ae5178e30f0ae8a4025bb5f6c5c15](https://i.gyazo.com/b51ae5178e30f0ae8a4025bb5f6c5c15.png)](https://gyazo.com/b51ae5178e30f0ae8a4025bb5f6c5c15)
+[![https://gyazo.com/2c6b9614fd3a7ea3d5265d8556c96c75](https://i.gyazo.com/2c6b9614fd3a7ea3d5265d8556c96c75.png)](https://gyazo.com/2c6b9614fd3a7ea3d5265d8556c96c75)
 
 確認画面が表示されるので、「はい」ボタンをクリックし削除を行ってください。
 
