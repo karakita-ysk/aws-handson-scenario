@@ -69,7 +69,7 @@ EC2インスタンスを選択後、上部「アクション」タブをクリ�
 
 [![https://gyazo.com/7e78c5cc7cb66108a9a1fcf82672a090](https://i.gyazo.com/7e78c5cc7cb66108a9a1fcf82672a090.png)](https://gyazo.com/7e78c5cc7cb66108a9a1fcf82672a090)
 
-‘‘‘‘
+````
 状態が「terminated」になっても、一覧画面には一定期間インスタンスが表示されています。
 しかし、状態が「terminated」であれば、今後料金は発生しませんのでご安心ください。
 ````
