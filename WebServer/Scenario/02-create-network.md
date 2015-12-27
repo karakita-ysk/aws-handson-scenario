@@ -80,12 +80,17 @@ VPCで使用するプライベートネットワークアドレスの範囲を�
 作成したサブネットは、VPC内の一つのルートテーブルに関連付ける必要があります。  
 本シナリオでは、VPC作成時に自動的に作成されたルートテーブルに関連付けます。  
 
-左側のリストにある「ルートテーブル」をクリックし、ルートテーブル一覧画面を表示します。  
-その後、VPCの列に先ほど作成したVPC名が表示されているルートテーブルを選択します。
+左側のリストにある「VPC」をクリックし、VPC一覧画面を表示します。  
+その後、先ほど作成したVPCを選択し、下部の「ルートテーブル：」横のハイパーリンクをクリックしてください。
 
-[![https://gyazo.com/789f0eeed75038b19ba65d303ef64b9f](https://i.gyazo.com/789f0eeed75038b19ba65d303ef64b9f.png)](https://gyazo.com/789f0eeed75038b19ba65d303ef64b9f)
+[![https://gyazo.com/002ed9d4db211cc58d8ed8176307d2ea](https://i.gyazo.com/002ed9d4db211cc58d8ed8176307d2ea.png)](https://gyazo.com/002ed9d4db211cc58d8ed8176307d2ea)
 
-下部にある、「サブネットの関連付け」タブをクリックし、表示した画面の「編集」ボタンをクリックします。
+クリックするとルートテーブル一覧画面に移動し、VPC作成時に自動的に作成されたルートテーブルが表示されるので、  
+このルートテーブルを選択してください。
+
+[![https://gyazo.com/3f3f73eaea43fd1cc415c5fdd54ab4b4](https://i.gyazo.com/3f3f73eaea43fd1cc415c5fdd54ab4b4.png)](https://gyazo.com/3f3f73eaea43fd1cc415c5fdd54ab4b4)
+
+その後、下部にある「サブネットの関連付け」タブをクリックし、表示した画面の「編集」ボタンをクリックします。
 
 [![https://gyazo.com/099c9838387ca11e21a5d9db8043b8dd](https://i.gyazo.com/099c9838387ca11e21a5d9db8043b8dd.png)](https://gyazo.com/099c9838387ca11e21a5d9db8043b8dd)
 
