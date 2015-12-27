@@ -2,7 +2,7 @@
 
 
 **(重要)** 以下の操作に移る前に、必ず基本的な操作シナリオ Aamazon Web Service (AWS)[Link-Top]を一読してください。
-[Link-Top]:]https://github.com/yoshirako/aws-handson-scenario/blob/master/WebServer/Introduction.md
+[Link-Top]:https://github.com/yoshirako/aws-handson-scenario/blob/master/WebServer/Introduction.md
 
 ### Webブラウザからログインページへアクセス
 PC上で、Webブラウザを起動し、接続先を入力して、アクセスします。
