@@ -8,7 +8,7 @@
 PC上でWebブラウザを起動し、接続先を入力してアクセスします。
 
 本シナリオでは、接続先URLは下記になります。  
-※hogehogehoge(アカウント名)の部分をご自身の環境に合わせて適宜読み替えてください。
+※hogehogehoge(アカウント名)の部分はご自身の環境に合わせて適宜読み替えてください。
 ```
 https://hogehogehoge.signin.aws.amazon.com/console
 ```
