@@ -147,8 +147,9 @@ ElasticIPを設定し、パブリックIPを固定化します。
 [![https://gyazo.com/b258f24adf0e35897e8f0bf57eaa9503](https://i.gyazo.com/b258f24adf0e35897e8f0bf57eaa9503.png)](https://gyazo.com/b258f24adf0e35897e8f0bf57eaa9503)
 
 クリックすると、パブリックIPが割り当てられます。  
+
 **(重要)** 割り当てられたパブリックIPアドレスをメモを取るなどをしてください。  
-(本シナリオを複数人で行う際、後の作業にて自分が取得したパブリックIPアドレスがどれなのかを確認するために必要になります。)
+(EC2インスタンスへ接続する際に必要になります。)
 
 [![https://gyazo.com/a1e208de09d061beb8262c8f8029456f](https://i.gyazo.com/a1e208de09d061beb8262c8f8029456f.png)](https://gyazo.com/a1e208de09d061beb8262c8f8029456f)
 
